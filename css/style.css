@@ -1,0 +1,352 @@
+body {
+    border-top: 10px solid #004f80; 
+    font-family: 'BundesSansWeb-Regular';
+}
+@font-face {
+    font-family: 'BundesSansWeb-Bold';
+    src: local('BundesSansWeb-Bold'), url('../fonts/BundesSansWeb-Bold.woff');
+}
+@font-face {
+    font-family: 'BundesSansWeb-Regular';
+    src: local('BundesSansWeb-Regular'), url('../fonts/BundesSansWeb-Regular.woff');
+}
+@font-face {
+    font-family: 'BundesSerifWeb-Bold';
+    src: local('BundesSerifWeb-Bold'), url('../fonts/BundesSerifWeb-Bold.woff');
+}
+@font-face {
+    font-family: 'BundesSerifWeb-Regular';
+    src: local('BundesSerifWeb-Regular'), url('../fonts/BundesSerifWeb-Regular.woff');
+}
+
+.container {
+    max-width: 1190px;
+}
+
+input:focus, button:focus, textarea:focus {
+    border-color: #000;
+    outline: 0!important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+ }
+ ul {
+     padding: 0;
+ }
+li {
+    list-style: none;
+ }
+
+.header {
+    height: 187px;
+}
+.logo img {
+    width: 168px;
+    margin-top: 20px;
+}
+.nav {
+display: flex;
+    justify-content: flex-end;
+}
+.nav-item {
+    padding: 10px 0 0 10px ;
+}
+.nav-link {
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #6b7581;
+    padding: 0;
+}
+.nav-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.header__search {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 28px;
+    position: relative;
+}
+.header__search input {
+    color: #5b646e;
+    padding: 5px 16px 6px;
+    background: #eeeeed;
+    border: 1px solid #d5d5d3;
+    border-radius: 4px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+
+}
+
+.header__search input:focus{
+   
+  border: 1px solid #004f80;
+}
+
+.header__search input::placeholder {
+    color: #909fb1;
+    font-weight: 100;
+}
+.header__search a {
+    color: #5b646e;
+    position: absolute;
+    right: 8px;
+    top: 6px;
+}
+.header__search a:hover {
+    color: #000;
+}
+.header__search a i {
+    font-size: 20px;
+    transform: rotate(90deg);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end; 
+}
+.header__nav li {
+    margin-right: 25px;
+}
+.header__nav-link {
+    color: #000;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    height: 60px;
+}
+.header__nav-link:hover {
+    color: #004f80;
+    text-decoration: none;
+}
+/*           <section class="slider">                       */
+.slider {
+    height: 456px;
+    background-color: #004f80;
+}
+.carousel-item img {
+    max-width: 100%;
+}
+.carousel {
+    position: relative;
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 120px;
+    left: 64%;
+    text-align: left;
+    width: 400px;
+}
+.carousel__text {
+    width: 400px;
+    padding-left: 70px;
+}
+.carousel__text a {
+    color: #fff;
+}
+.carousel__text h2 {
+    font-size: 26px;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.carousel__text p {
+    font-size: 18px;
+}
+.carousel-indicators {
+    justify-content: flex-end;
+    position: absolute;
+    top: 400px;
+}
+.carousel-indicators li {
+    background: none;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    text-indent: 10px;
+}
+
+
+/*           main                       */
+.content__box {
+    display: flex;
+    border-bottom: 1px dotted #a6acb3;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+.content h2 {
+    color: #6b7581;
+    font-size: 18px;
+    padding: 15px 0 15px 0;
+}
+.content__box_text {
+    margin-left: 35px;
+    margin-top: -10px;
+}
+.content__box_text a {
+    color: #000;
+}
+.content__box_text h3 {
+    font-size: 13px;
+    font-family: 'BundesSansWeb-Bold';
+    text-transform: uppercase;
+    color: #004f80;
+}
+.content__box_text h4 {
+    font-size: 18px;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+.content__box_text p {
+    font-size: 15px;
+}
+.fa-arrow-right {
+    font-size: 15px;
+    padding-right: 5px;
+}
+.content__box_link a {
+    color: #004f80;
+}
+.content__box-btn {
+    font-size: 15px;
+    color: #fff;
+    background-color: #004f80;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 10px 7px;
+    margin-bottom: 50px;
+}
+.content__box-btn:hover {
+    color: #fff;
+    text-decoration: underline;
+    background-color: #a6acb3;
+}
+
+
+
+
+
+
+/*           <rightbar__contacts>                       */
+.rightbar {
+    margin-left: 40px;
+}
+.rightbar__contacts {
+    display: flex;
+    justify-content: space-between;
+    background-color: #a0cde9;
+    padding: 21px 25px 50px;
+    max-width: 404px;
+}
+
+.fa-question-circle,
+.fa-external-link-alt {
+    font-size: 48px;
+    color: #004f80;
+    text-align: center;
+}
+.rightbar__contacts_map h4,
+.rightbar__contacts_map p,
+.rightbar__contacts_map p a,
+.rightbar__info p,
+.rightbar__info a {
+    font-size: 15px;
+    margin-bottom: 0;
+}
+.rightbar__contacts_map h4 {
+    font-weight: bold;
+    font-family: 'BundesSansWeb-Bold';
+    margin-bottom: 0;
+}
+.rightbar__contacts_map h3,
+.rightbar__info h3 {
+    color: #004f80;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.rightbar__contacts_map p {
+    margin-top: 10px;
+}
+.fa-envelope {
+    padding-right: 5px;
+    font-size: 16px;
+}
+.rightbar a {
+    color: #004f80;
+}
+.blue {
+    height: 655px;
+    background-color: #e0edf7;
+}
+.rightbar__contacts_map,
+.rightbar__info {
+    margin-left: 30px;
+}
+.border {
+    border-bottom: 1px dotted #004f80;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+/*           footer                      */
+
+.footer__social {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    background: url(../img/bg-striped.png) repeat 0 0;
+}
+.footer__social_link {
+    width: 20px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.footer__social_link svg:hover {
+    fill: #004f80;
+}
+
+.footer__links {
+    font-family: 'BundesSansWeb-Regular';
+    font-size: 13px;
+    line-height: 1.5384615385;
+    flex-direction: column;
+    width: 100%;
+    min-height: 389px;
+    background-color: #455157;
+}
+.footer__links_box {
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+.footer__links_box a,
+.footer__copy p,
+.footer__copy span,
+.footer__copy a {
+    color: #fff;
+}
+.footer__links_box a:hover {
+    text-decoration: underline;
+}
+.footer__title {
+    font-family: 'BundesSansWeb-Bold';
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.footer__copy {
+    padding-bottom: 61px;
+}
+.footer__btn {
+    color: #004f80;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 4px 4px 0 0 ;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
